@@ -2,7 +2,6 @@
 .container {
   background: transparent;
   font-family: kelvetica;
-  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -132,6 +131,48 @@
   color: white;
   line-height: 1.7;
   margin-bottom: 2rem;
+}
+
+img.about-photo {
+  background-color: red;
+}
+
+/* About Detail */
+
+.aboutContainer {
+      display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+  
+    padding: 50px;
+}
+
+img {
+    animation: slideFadeIn 2s ;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity : 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(auto);
+  }
+}
+
+
+
+.title{
+  color : white;  
+}
+
+.experienceSlide {
+  background-image: url(/public/Hero_Banner.png);
+  width: 100%;
+  
 }
 
 @media (max-width: 768px) {

@@ -13,6 +13,8 @@ html, body {
     scroll-snap-type: proximity;
 }
 
+
+
 body {
     background-color: black;
 }
@@ -402,10 +404,11 @@ header nav ul:has(:hover) :not(:hover) {
 
 /* Projects Section */
 #projects .grid {
-    margin: 10px;
-    display: grid;
+    margin: 35px;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0.5rem;
+    
+    gap: 2rem;
     place-items: center;
 }
 
@@ -415,6 +418,8 @@ header nav ul:has(:hover) :not(:hover) {
 
 #projects {
     padding : 2rem;
+    margin: 5rem 0;
+    
     height : 60vh;
 }
 
@@ -546,7 +551,7 @@ footer {
     }
     #hero, .hero-container {
         height: auto;
-        min-height: 70vh;
+        min-height: 100vh;
         padding: 24px 0;
     }
     #hero h1, #hero h2 {
@@ -559,6 +564,7 @@ footer {
         max-width: 95vw;
     }
     #projects {
+        margin-top: 10rem;
         padding: 1rem 0.5rem;
         height: auto;
     }
@@ -866,6 +872,9 @@ footer {
     font-family: kelvetica;
     src: url(/src/assets/font_faces/KelveticaNobis-A5z6.ttf);
 }
+
+
+
 
 /* General Styles
 .carousel-container {

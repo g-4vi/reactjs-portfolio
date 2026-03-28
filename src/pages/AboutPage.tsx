@@ -3,6 +3,8 @@ import Footer from "../components/Home/Footer.tsx";
 import styles from "../components/About/About.module.css";
 import animStyles from "../components/animations.module.css";
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import AboutDetail from "../components/About/AboutDetail.tsx";
+import Experience from "../components/About/Experience.tsx";
 
 const AboutPage = () => {
   const intro = useScrollAnimation();
@@ -17,24 +19,20 @@ const AboutPage = () => {
     <main style={{ background: 'linear-gradient(180deg, #000 0%, #fbc02d 100%)', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
     <div className={styles.container}>
       
-      {/* Personal Introduction Section */}
       <section 
         ref={intro.ref}
         className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay1} ${intro.isVisible ? animStyles.visible : ''}`}
       >
+        <AboutDetail />
         <h2>Hello, I'm Alki!</h2>
         <p className={styles.introText}>
           A passionate Informatics major based in Indonesia, with a focus on creating
           meaningful and impactful experiences.
         </p>
         
-        <h3>What I Do</h3>
-        <p>
-          As the home page says, I am a passionate Tech Enthusiast with various blends of skills and experiences. Currently, I am working as a Game Developer at Animesme
-          Even though that, I am always open to new opportunities to help people and make a difference in the world.
-        </p>
+        
       </section>
-
+      <Experience />
       {/* Experience & Education Section */}
       <section 
         ref={experience.ref}
