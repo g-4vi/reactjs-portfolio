@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./About.module.css"
 
-function ExperienceSlider() {
+function ExperienceSlider() { // Tambahin parameter untuk foto dan text role disini
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
