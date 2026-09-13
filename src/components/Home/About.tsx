@@ -51,14 +51,12 @@ function About() {
       <div className="container" ref={scrollerRef}>
         <div className="scroller" data-direction="right" data-speed="fast">
           <div className="scroller__inner">
-            <img
-              height="100px"
-              src="/Aiesec_Bandung.png"
-              alt="AIESEC In Bandung"
-            />
-            <img height="100px" src="/Ses.png" alt="Student English Society" />
-            <img height="100px" src="/Kontent_Logo.png" alt="Kontent HIMA IF" />
-            <img height="100px" src="/Nabati_Logo.png" alt="Nabati Group" />
+            <img height="200px" src="/CompanyLogo_Aiesec.png" alt="AIESEC In Bandung" />
+            <img height="200px" src="/CompanyLogo_Ses.png" alt="Student English Society" />
+            <img height="200px" src="/CompanyLogo_Kontent.png" alt="Kontent HIMA IF" />
+            <img height="200px" src="/CompanyLogo_Nabati.png" alt="Nabati Group" />
+            <img height="200px" src="/CompanyLogo_Animesme.png" alt="Animesme" />
+            <img height="200px" src="/CompanyLogo_Funix.png" alt="Funix Indonesia" />
           </div>
         </div>
       </div>

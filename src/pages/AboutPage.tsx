@@ -13,91 +13,111 @@ const AboutPage = () => {
 
   return (
     <>
-    
-    <Hero />
-    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width:'100%', height: 80, pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%)' }} />
-    <main style={{ background: 'linear-gradient(180deg, #000 0%, #fbc02d 100%)', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
-    <div className={styles.container}>
-      
-      <section 
-        ref={intro.ref}
-        className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay1} ${intro.isVisible ? animStyles.visible : ''}`}
-      >
-        <AboutDetail />
-        <h2>Hello, I'm Alki!</h2>
-        <p className={styles.introText}>
-          A passionate Informatics major based in Indonesia, with a focus on creating
-          meaningful and impactful experiences.
-        </p>
-        
-        
-      </section>
-      <Experience />
-      {/* Experience & Education Section */}
-      <section 
-        ref={experience.ref}
-        className={`${styles.experienceSection} ${animStyles.fadeIn} ${animStyles.delay2} ${experience.isVisible ? animStyles.visible : ''}`}
-      >
-        <h2>Experience & Education</h2>
-        
-        {/* Experience Item */}
-        <div className={styles.timelineItem}>
-          <h3>[Nabati Group / IT Consultant Intern]</h3>
-          <p className={styles.period}>[Time Period]</p>
-          <p>
-            [Description of role and key achievements]
-          </p>
-        </div>
 
-        <div className={styles.timelineItem}>
-          <h3>[Animesme / Game Programmer Intern]</h3>
-          <p className={styles.period}>[Time Period]</p>
-          <p>
-            [Description of role and key achievements]
-          </p>
-        </div>
-        
-        {/* Education Item */}
-        <div className={styles.timelineItem}>
-          <h3>[Telkom University]</h3>
-          <p className={styles.period}>[S1 Komputer / Bachelor of Informatics] - [2025]</p>
-          <p>
-            [Brief description of your studies and achievements]
-          </p>
-        </div>
-      </section>
+      <Hero />
+      <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width: '100%', height: 80, pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%)' }} />
+      <main style={{ background: 'linear-gradient(180deg, #000 0%, #fbc02d 100%)', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
+        <div className={styles.container}>
 
-      {/* Interests & Hobbies Section */}
-      <section 
-        ref={interests.ref}
-        className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay3} ${interests.isVisible ? animStyles.visible : ''}`}
-      >
-        <h2>Beyond Work</h2>
-        
-        <div className={styles.interestCard}>
-          <h3>Interests</h3>
-          <p>
-            [List your interests and what you're passionate about outside of work]
-          </p>
+          <section
+            ref={intro.ref}
+            className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay1} ${intro.isVisible ? animStyles.visible : ''}`}
+          >
+            <AboutDetail />
+            {/* <h2>Hello, I'm Alki!</h2>
+            <p className={styles.introText}>
+              An informatics undergraduate, with academic and practical experience in Software Development, UX
+              Research, and problem-solving. Experienced in people development after being active in various organizations
+              such as AIESEC in Bandung, Student English Society, etc. Gained hands-on industry experience as an IT
+              Intern at Nabati Group and Technical Operations Manager at Funix Indonesia, in which I applied my UI
+              Design, Game Development, Software Development, and Quality Assurance knowledge. Currently
+              focusing on leveraging technology to enhance human experiences and creating innovative solutions.
+            </p> */}
+
+
+          </section>
+          <Experience />
+          {/* Experience & Education Section */}
+          <section
+            ref={experience.ref}
+            className={`${styles.experienceSection} ${animStyles.fadeIn} ${animStyles.delay2} ${experience.isVisible ? animStyles.visible : ''}`}
+          >
+            <h2>Experience & Education</h2>
+
+            {/* Experience Item */}
+            <div className={styles.timelineItem}>
+              <h3>[Nabati Group / IT Consultant Intern]</h3>
+              <p className={styles.period}>[Jun - Aug 2024]</p>
+              <p>
+                [Description of role and key achievements]
+              </p>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <h3>[Animesme / Game Programmer Intern]</h3>
+              <p className={styles.period}>[Apr - Aug 2025]</p>
+              <p>
+                [Description of role and key achievements]
+              </p>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <h3>[Funix Indonesia / Lead Programmer]</h3>
+              <p className={styles.period}>[Aug 2025 - May 2026]</p>
+              <p>
+                [Description of role and key achievements]
+              </p>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <h3>[Funix Indonesia / Technical Operations Manager]</h3>
+              <p className={styles.period}>[May 2026 - Present]</p>
+              <p>
+                [Description of role and key achievements]
+              </p>
+            </div>
+
+            {/* Education Item */}
+            <div className={styles.timelineItem}>
+              <h3>[Telkom University]</h3>
+              <p className={styles.period}>[S1 Komputer / Bachelor of Informatics] - [2025]</p>
+              <p>
+                [Brief description of your studies and achievements]
+              </p>
+            </div>
+          </section>
+
+          {/* Interests & Hobbies Section */}
+          <section
+            ref={interests.ref}
+            className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay3} ${interests.isVisible ? animStyles.visible : ''}`}
+          >
+            <h2>Beyond Work</h2>
+
+            <div className={styles.interestCard}>
+              <h3>Interests</h3>
+              <p>
+                [List your interests and what you're passionate about outside of work]
+              </p>
+            </div>
+
+            <div className={styles.interestCard}>
+              <h3>Hobbies</h3>
+              <p>
+                [Share some of your favorite hobbies and activities]
+              </p>
+            </div>
+
+            <div className={styles.interestCard}>
+              <h3>Goals</h3>
+              <p>
+                [Describe your professional or personal goals]
+              </p>
+            </div>
+          </section>
         </div>
-        
-        <div className={styles.interestCard}>
-          <h3>Hobbies</h3>
-          <p>
-            [Share some of your favorite hobbies and activities]
-          </p>
-        </div>
-        
-        <div className={styles.interestCard}>
-          <h3>Goals</h3>
-          <p>
-            [Describe your professional or personal goals]
-          </p>
-        </div>
-      </section>
-    </div> 
-    </main>
-    <Footer />
+      </main>
+      <Footer />
     </>
   );
 };
